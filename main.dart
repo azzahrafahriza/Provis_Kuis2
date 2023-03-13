@@ -31,123 +31,124 @@ class MyAppState extends State<MyApp> {
             backgroundColor: Colors.blueGrey,
             title: Text('Quiz Flutter'),
             actions: <Widget>[ButtonNamaKelompok(), ButtonPerjanjian()]),
-        body: Center(
-          child: ListView.separated(
-            itemCount: 25,
-            separatorBuilder: (BuildContext context, int index) => const Divider(
-              color: Colors.black,
-            ),
-            itemBuilder: (BuildContext context, int index) {
-              return ListTile(
-                title: Center(
-                    child: Text(
-                  'Campus Alert',
-                  style: TextStyle(
-                    color: Colors.red,
-                    fontSize: 12,
-                  ),
-                )),
-                subtitle: Center(
-                    child: Text(
-                  'Notifikasi ke-$index',
-                  style: TextStyle(color: Colors.black),
-                )),
-              );
-            },
-          ),
-        ),
         // body: Center(
-        //   child: Column(children: [
-        //     Container(
-        //       // : Text("Actifity"),
-        //       height: 200,
-        //       width: double.infinity,
-        //       decoration: BoxDecoration(
-        //         image: DecorationImage(
-        //           image: NetworkImage('assets/sky.jpg'),
-        //           fit: BoxFit.cover,
-        //         ),
-        //       ),
-        //       child: Center(
-        //           child: const Text(
-        //         'Actifity',
-        //         style: TextStyle(fontSize: 50, color: Colors.white),
-        //       )),
+        //   child: ListView.separated(
+        //     itemCount: 25,
+        //     separatorBuilder: (BuildContext context, int index) => const Divider(
+        //       color: Colors.black,
         //     ),
-        //     Container(
-        //       height: 200,
-        //       width: double.infinity,
-        //       // color: Colors.blue,
-        //       child: Column(
-        //         // crossAxisAlignment: CrossAxisAlignment.center,
-        //         mainAxisAlignment: MainAxisAlignment.center,
-        //         children: [
-        //           Center(
-        //               child: Icon(
-        //             Icons.verified,
-        //             size: 70,
-        //           )),
-        //           Center(
-        //             child: Padding(
-        //               padding: const EdgeInsets.all(8.0),
-        //               child: Text(
-        //                 "No New Notifications",
-        //                 style: TextStyle(
-        //                     fontSize: 20, fontWeight: FontWeight.bold),
-        //               ),
-        //             ),
-        //           ),
-        //           Center(
+        //     itemBuilder: (BuildContext context, int index) {
+        //       return ListTile(
+        //         title: Center(
         //             child: Text(
-        //                 "You're caught up! Checkback for notifications, campus alert and more\n"),
+        //           'Campus Alert',
+        //           style: TextStyle(
+        //             color: Colors.red,
+        //             fontSize: 12,
         //           ),
-
-        //           // Center(child: Text("Campus Alert\n"),
-        //           // ),
-        //           // Center(child: Text("Campus Alert\n"),
-        //           // ),
-        //           Container(
-        //             // decoration: BoxDecoration(
-        //             //   border: Border.all(color: Colors.black, width: 2),
-        //             // ),
-        //             width: double.infinity,
-        //             height: 50,
-        //             color: Colors.white,
-        //             // child: Text("campus Alert"),
-        //             child: Center(
-        //               child: Column(
-        //                 children: [
-        //                   Text(
-        //                     "Campus Alert\n",
-        //                     style: TextStyle(
-        //                       color: Colors.red,
-        //                       fontSize: 12,
-        //                     ),
-        //                   ),
-        //                   Text(
-        //                     "Notifikasi ke-0",
-        //                     style: TextStyle(color: Colors.black),
-        //                   ),
-        //                 ],
-        //               ),
-        //             ),
-        //             // box
-        //           ),
-
-        //           // Expanded(child: child)
-        //           // Column(
-        //           //   mainAxisAlignment: MainAxisAlignment.center,
-        //           //   children: [
-        //           //     Text("Campus Alert\n"),
-        //           //     Text("Notifikasi ke-$index"),
-        //           //   ],
-        //           // ),
-        //         ],
-        //         // child: Icon(Icons.trending_up),
-        //       ),
-        //     ),
-        //   ]),
+        //         )),
+        //         subtitle: Center(
+        //             child: Text(
+        //           'Notifikasi ke-$index',
+        //           style: TextStyle(color: Colors.black),
+        //         )),
+        //       );
+        //     },
+        //   ),
         // ),
+        body: Center(
+          child: Column(children: [
+            Container(
+              // : Text("Actifity"),
+              height: 200,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage('assets/sky.jpg'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: Center(
+                  child: const Text(
+                'Actifity',
+                style: TextStyle(fontSize: 50, color: Colors.white),
+              )),
+            ),
+            Container(
+              height: 200,
+              width: double.infinity,
+              // color: Colors.blue,
+              child: Column(
+                // crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Center(
+                      child: Icon(
+                    Icons.verified,
+                    size: 70,
+                  )),
+                  Center(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "No New Notifications",
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: Text(
+                        "You're caught up! Checkback for notifications, campus alert and more\n"),
+                  ),
+
+                  // Center(child: Text("Campus Alert\n"),
+                  // ),
+                  // Center(child: Text("Campus Alert\n"),
+                  // ),
+                  Container(
+                    // decoration: BoxDecoration(
+                    //   border: Border.all(color: Colors.black, width: 2),
+                    // ),
+                    width: double.infinity,
+                    height: 50,
+                    color: Colors.white,
+                    // child: Text("campus Alert"),
+                    child: Center(
+                      child: Column(
+                        children: [
+                          Text(
+                            "Campus Alert\n",
+                            style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 12,
+                            ),
+                          ),
+                          Text(
+                            "Notifikasi ke-0",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                    // box
+                  ),
+                  
+
+                  // Expanded(child: child)
+                  // Column(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+                  //     Text("Campus Alert\n"),
+                  //     Text("Notifikasi ke-$index"),
+                  //   ],
+                  // ),
+                ],
+                // child: Icon(Icons.trending_up),
+              ),
+            ),
+          ]),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           elevation: 0,
           currentIndex: 0,
